@@ -17,6 +17,7 @@ module Players
       elsif board.turn_count >= 2
         move = board.cells.detect {|i| !board.taken?(i)}.to_s
       end
+      move
     end
 
   end
