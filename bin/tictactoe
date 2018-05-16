@@ -2,7 +2,7 @@
 
 require_relative '../config/environment'
 
-  start
+
   def start
     puts "Welcome to Tic Tac Toe!"
     puts
@@ -23,7 +23,7 @@ require_relative '../config/environment'
       start
     end
   end
-
+  
   until game.won?
     game.play
   end
