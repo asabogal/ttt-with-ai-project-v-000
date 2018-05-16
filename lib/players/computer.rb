@@ -11,7 +11,10 @@ module Players
       elsif board.count == 1 && !board.taken?(5)
         move = "5"
 
+      elsif board.count == 1 && board.taken?(5)
+        move = [1, 3, 7, 9].detect {|i| !board.taken?(i)}.to_s
       end
+
 
     end
 
