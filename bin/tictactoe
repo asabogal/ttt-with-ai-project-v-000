@@ -20,8 +20,6 @@ require_relative '../config/environment'
     game = Game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   end
 
-
-  # game = Game.new
   until game.won?
     game.play
   end
