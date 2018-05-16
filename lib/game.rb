@@ -51,8 +51,9 @@ class Game
     if !@board.valid_move?(this_move)
       turn
     end
-    @board.display
     @board.update(this_move, current_player)
+    @board.display
+
   end
 
   def play
