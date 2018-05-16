@@ -9,14 +9,14 @@ require_relative '../config/environment'
   game = nil
   if players == "0"
     game = Game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
-    until game.won?
-      game.play
-    end
+    # until game.won?
+    #   game.play
+    # end
 
   elsif players == "1"
-    single_player = (Players::Human.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+    game = Game.new(Players::Human.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   else
-    two_players = (Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+    game = Game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   end
 
 
