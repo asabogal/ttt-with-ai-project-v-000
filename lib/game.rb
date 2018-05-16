@@ -53,6 +53,7 @@ class Game
     end
     @board.update(this_move, current_player)
     @board.display
+    puts "It's #{current_player}'s turn:'"
 
   end
 
