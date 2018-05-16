@@ -34,7 +34,6 @@ require_relative '../config/environment'
         game.play
       end
     end
-
-
   end
+
   start
