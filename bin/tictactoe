@@ -5,7 +5,10 @@ require_relative '../config/environment'
   puts "Welcome to Tic Tac Toe!"
   puts
   puts "How many players? (0, 1, 2)"
-  players = gets.strip.to_i
+  players = gets.strip
+  if players == "0"
+    computer_game = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+
 
 def start
   game = Game.new
