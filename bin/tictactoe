@@ -6,12 +6,13 @@ require_relative '../config/environment'
   puts
   puts "How many players? (0, 1, 2)"
   players = gets.strip
+  game = nil
   if players == "0"
-    wargames = (Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
-    game = Game.new(wargames)
+    game = Game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
     until game.won?
       game.play
     end
+
   elsif players == "1"
     single_player = (Players::Human.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   else
@@ -19,7 +20,9 @@ require_relative '../config/environment'
   end
 
 
-
+  # game = Game.new
+  until game.won?
+    game.play
 
 
   play_again = ""
