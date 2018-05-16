@@ -10,7 +10,8 @@ end
 
 
 play_again = ""
-until play_again == "n" || play_again == "no"
+puts "Would you like to play again? ('y' or 'n')"
+if play_
 
   puts "Would you like to play again?"
   play_again = gets.strip
