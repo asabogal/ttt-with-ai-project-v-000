@@ -53,7 +53,7 @@ class Game
     end
     @board.update(this_move, current_player)
     @board.display
-    puts "It's #{current_player.token}'s turn:'"
+    puts "It's #{current_player.token}'s turn:'" unless over?
 
   end
 
