@@ -15,8 +15,9 @@ module Players
         move = [1, 3, 7, 9].detect {|i| !board.taken?(i)}.to_s
 
       elsif board.turn_count >= 2
-        # binding.pry
+        binding.pry
         # move = board.cells.detect {|i| !board.taken?(i)}.to_s
+        move = board.cells.detect
       end
       move
     end
