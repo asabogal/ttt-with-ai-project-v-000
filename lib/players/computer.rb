@@ -5,11 +5,11 @@ module Players
     def move(board)
       move = nil
 
-      if
-        !board.taken?(5)
+      if !board.taken?(5)
         move = "5"
 
-      elsif
+      elsif 
+
 
       end
 
