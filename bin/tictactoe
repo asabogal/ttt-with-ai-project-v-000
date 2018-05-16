@@ -9,9 +9,9 @@ require_relative '../config/environment'
   if players == "0"
     wargames = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   elsif players == "1"
-    single_player = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+    single_player = game.new(Players::Human.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   else
-    two_players = 
+    two_players = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
   end
 
 def start
