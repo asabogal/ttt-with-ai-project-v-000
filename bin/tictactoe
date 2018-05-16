@@ -17,5 +17,4 @@ if play_again = "y"
   until game.won?
     game.play
   end
-
 end
