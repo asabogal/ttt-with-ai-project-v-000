@@ -7,9 +7,10 @@ require_relative '../config/environment'
   puts "How many players? (0, 1, 2)"
   players = gets.strip
   if players == "0"
-    computer_game = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
-
-
+    wargames = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+  elsif players == "1"
+    new_game = game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+  else 
 def start
   game = Game.new
   until game.won?
