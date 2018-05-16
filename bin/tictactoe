@@ -15,7 +15,7 @@ require_relative '../config/environment'
     game = Game.new(Players::Human.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
 
   elseif players == "2"
-    game = Game.new(Players::Computer.new("X"),player_2 = Players::Computer.new("O"), board = Board.new)
+    game = Game.new(Players::Human.new("X"),player_2 = Players::Human.new("O"), board = Board.new)
 
   end
 
