@@ -51,6 +51,7 @@ class Game
     if !@board.valid_move?(this_move)
       turn
     end
+    puts "Current turn is: #{board.turn_count+1}"
     @board.update(this_move, current_player)
   end
 
