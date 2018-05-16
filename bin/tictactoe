@@ -12,7 +12,7 @@ end
 play_again = ""
 puts "Would you like to play again? ('y' or 'n')"
 play_again = gets.strip
-if play_again = "y"
+if play_again == "y"
   game = Game.new
   until game.won?
     game.play
