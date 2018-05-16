@@ -3,6 +3,7 @@
 require_relative '../config/environment'
 
 
+
   def start
     puts "Welcome to Tic Tac Toe!"
     puts
@@ -35,5 +36,3 @@ require_relative '../config/environment'
       end
     end
   end
-
-  start
