@@ -23,6 +23,7 @@ require_relative '../config/environment'
   # game = Game.new
   until game.won?
     game.play
+  end
 
 
   play_again = ""
