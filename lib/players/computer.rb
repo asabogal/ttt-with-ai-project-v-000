@@ -17,7 +17,7 @@ module Players
 
       elsif board.turn_count >= 2
         # binding.pry
-        move = [*0..9].detect {|i| !board.taken?(i)}.to_s
+        move = [*0..10].detect {|i| !board.taken?(i)}.to_s
         # move = board.cells.detect
       end
       move
