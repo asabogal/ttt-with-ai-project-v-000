@@ -52,6 +52,7 @@ class Game
       turn
     end
     puts "Current turn is: #{board.turn_count+1}"
+    @board.display
     @board.update(this_move, current_player)
   end
 
