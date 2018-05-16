@@ -22,12 +22,13 @@ require_relative '../config/environment'
     else
       start
     end
+    until game.won?
+      game.play
+    end
+
   end
   start
-  game
-  until game.won?
-    game.play
-  end
+
 
 
   play_again = ""
