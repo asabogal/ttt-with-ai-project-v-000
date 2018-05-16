@@ -48,11 +48,10 @@ class Game
 
   def turn
     this_move = current_player.move(@board)
-    @board.display
     if !@board.valid_move?(this_move)
       turn
     end
-    puts "Current turn is: #{board.turn_count+1}"
+    puts "Current turn is: #{board.turn_count}"
     @board.display
     @board.update(this_move, current_player)
   end
