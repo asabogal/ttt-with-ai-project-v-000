@@ -28,9 +28,7 @@ require_relative '../config/environment'
     puts "Would you like to play again? ('y' or 'n')"
     play_again = gets.strip
     if play_again == "y"
-      game = Game.new
-      until game.won?
-        game.play
+      start
       end
     end
   end
