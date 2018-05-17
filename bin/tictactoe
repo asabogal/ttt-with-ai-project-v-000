@@ -21,7 +21,7 @@ require_relative '../config/environment'
     else
       start
     end
-    until game.won?
+    until game.won? || game.draw?
       game.play
     end
     play_again = ""
